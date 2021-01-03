@@ -7,7 +7,8 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-
+import router from "./admin/router";
+Vue.component('admin-master', require('./components/admin/AdminMaster.vue').default);
 
 
 
@@ -19,6 +20,7 @@ window.Vue = require('vue');
 
 const admin = new Vue({
     el: '#admin',
+    router,
     data: {test: 'Testing Admin from View'},
 });
 

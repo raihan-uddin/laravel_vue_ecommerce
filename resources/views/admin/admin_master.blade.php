@@ -10,7 +10,7 @@
 <body>
 
 <div id="admin">
-    @{{test}}
+    <admin-master></admin-master>
 </div>
 <script src="{{asset('/public/js/admin.js')}}"></script>
 </body>

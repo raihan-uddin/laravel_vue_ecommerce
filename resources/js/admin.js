@@ -11,7 +11,7 @@ import router from "./admin/router";
 Vue.component('admin-master', require('./components/admin/AdminMaster.vue').default);
 
 
-
+Vue.config.ignoredElements = ['submenu']
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
